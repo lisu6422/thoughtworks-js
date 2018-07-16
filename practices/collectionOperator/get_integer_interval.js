@@ -17,6 +17,7 @@ function get_integer_interval(number_a, number_b) {
       res.push(i);
     }
   }
+  
   return res;
 }
 
