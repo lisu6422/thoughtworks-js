@@ -2,7 +2,7 @@
 
 function collect_last_element(collection) {
   //在这里写入代码
-  var res;
+  
   var index = collection.length-1;
   return collection[index];
   

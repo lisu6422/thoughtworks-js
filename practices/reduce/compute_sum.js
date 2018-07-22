@@ -2,6 +2,11 @@
 
 function calculate_elements_sum(collection) {
   //在这里写入代码
+  let res = 0;
+  res = collection.reduce(function(x,y){
+    return x + y;
+  });
+  return res;
 }
 
 module.exports = calculate_elements_sum;

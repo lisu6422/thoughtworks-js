@@ -4,15 +4,16 @@ function choose_divisible_integer(collection_a, collection_b) {
 
   //在这里写入代码
   let res = [];
-  for (var ele1 of collection_a) {
-    for(var ele2 of collection_b)
-    {
-      if (ele1 % ele2 === 0) {
-        res.push(ele1);
-      }
+ 
+
+  res = collection_a.filter(function(x){
+    let temp = x;
+    for(var ele2 of collection_b){
+      if(temp % ele2 === 0){
+        return true;
+      }   
     }
-   
-  }
+  });
   return res;
 }
 

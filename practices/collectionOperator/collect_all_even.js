@@ -5,7 +5,7 @@ function collect_all_even(collection) {
   var res = [];
   for(var i=0; i<collection.length; i++)
   {
-    if(collection[i] %2 == 0)
+    if(collection[i] %2 === 0)
     {
       res.push(collection[i]);
     }

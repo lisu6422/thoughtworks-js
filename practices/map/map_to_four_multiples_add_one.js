@@ -1,9 +1,9 @@
 'use strict';
 var map_to_four_multiples_add_one = function(collection){
   let arr = [];
-  collection.forEach(element => {
-    arr.push(element * 4 + 1);
-  });
+  arr = collection.map(function(x){
+    return x*4+1;
+   });
   return arr;
 };
 

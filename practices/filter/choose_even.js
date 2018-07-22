@@ -4,14 +4,9 @@ function choose_even(collection) {
 
   //在这里写入代码
   let arr = [];
-  let len = collection.length;
-  for(let i=0; i<len; i++)
-  {
-    if(collection[i] % 2 === 0)
-    {
-      arr.push(collection[i]);
-    }
-  }
+  arr = collection.filter(function (x) {
+    return x % 2 === 0;
+  });
   return arr;
 }
 

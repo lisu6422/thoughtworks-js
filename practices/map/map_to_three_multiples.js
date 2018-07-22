@@ -1,9 +1,9 @@
 'use strict';
 var map_to_three_multiples = function(collections){
   let arr = [];
-  collections.forEach(element => {
-    arr.push(element * 3);
-  });
+  arr = collections.map(function(x){
+    return x*3;
+   });
   return arr;
 };
 
